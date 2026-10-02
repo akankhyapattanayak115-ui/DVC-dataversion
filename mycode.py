@@ -13,9 +13,13 @@ df = pd.DataFrame(data)
 data_dir = 'data'
 os.makedirs(data_dir,exist_ok=True)
 
-#adding new row to df 
+#adding new row to df for v2
 new_row = {'Name':'David','Age':40,'City':'Houston'}
 df.loc[len(df)] = new_row   
+
+#adding new row to df for v3
+new_row2 = {'Name':'Eve','Age':45,'City':'Phoenix'}
+df.loc[len(df)] = new_row2   
 
 #Define the file path
 file_path = os.path.join(data_dir,'sample_data.csv')
